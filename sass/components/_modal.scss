@@ -4,18 +4,6 @@
     pointer-events: none;
 }
 
-.backdrop{
-    position: fixed;
-    cursor: not-allowed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(0, 0%, 0%, .5);
-    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 100;
-}
-
 .modal{
     position: absolute; 
     top: 50%;
@@ -40,6 +28,11 @@
     background-color: var(--primary-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    &:hover .close-icon,
+    &:hover .close-icon{
+        fill: var(--accent-color);
+    }
 }
 
 .close-icon{
@@ -52,10 +45,7 @@
     transition: var(--timing-function);
 }
 
-.close-btn:hover .close-icon,
-.close-btn:hover .close-icon{
-    fill: var(--accent-color);
-}
+
 
 /* =========form======== */
 
@@ -83,24 +73,36 @@
     font: inherit;
 
     padding-left: 42px;
+
+    &.comment{
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        resize: none;
+    
+        margin: 0;
+        font: inherit;
+    }
+
+    &:focus + .form-label,
+    &:not(:placeholder-shown) + .form-label{
+        transform: translateY(-50px);
+    }
+
+    &:focus,
+    &:hover{
+        outline: none;
+        border-color: var(--accent-color);
+        transition: var(--timing-function);
+    }
+
+    &:hover + .form-svg,
+    &:focus + .form-svg{
+        fill: var(--accent-color);
+        transition: var(--timing-function);
+    }
 }
-
-.form-input.comment{
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-
-    margin: 0;
-    font: inherit;
-}
-
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-50px);
-}
-
 
 .button-one.form-button{
     display: block;
@@ -114,13 +116,13 @@
     color: #757575;
     margin-left: 5px;
     cursor: pointer;
-}
 
-.form-label.check{
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    color: #757575;
+    &.check{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.16;
+        color: #757575;
+    }
 }
 
 .conditions{
@@ -151,16 +153,5 @@
     margin-bottom: 10px;
 }
 
-.form-input:focus,
-.form-input:hover{
-    outline: none;
-    border-color: var(--accent-color);
-    transition: var(--timing-function);
-}
 
-.form-input:hover + .form-svg,
-.form-input:focus + .form-svg{
-    fill: var(--accent-color);
-    transition: var(--timing-function);
-}
 /* ==========form end========= */

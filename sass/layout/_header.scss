@@ -9,6 +9,13 @@
     display: flex;
     align-items: center;
 
+    & .item{
+        outline: 1px solid transparent;
+    }
+    
+    & .item + .item{
+        margin-left: 50px;
+    }
 }
 
 .site-nav-list{
@@ -21,25 +28,19 @@
     margin-left: auto;
 }
 
-.site-nav .item{
-    outline: 1px solid transparent;
-}
-
-.site-nav .item + .item{
-    margin-left: 50px;
-}
-
 .header{
     border-bottom: 1px solid #ECECEC;
     background-color: var(--primary-white-color);
+
+    & .line{
+        height: 0px;
+        left: 0px;
+        top: 80px;
+        border: 1px solid #ECECEC;
+    }
 }
 
-.header .line{
-    height: 0px;
-    left: 0px;
-    top: 80px;
-    border: 1px solid #ECECEC;
-}
+
 
 .site-nav-link{
     display: block;
@@ -50,52 +51,37 @@
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-}
 
-.site-nav-link:hover,
-.site-nav-link:focus{
-    color: var(--accent-color);
-}
-
-.site-nav-link.mail{
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    color: var(--primary-texst-color);
-   
-}
-
-.site-nav-link.mail:hover,
-.site-nav-link.mail:focus{
-    color: var(--accent-color);
-}
-
-.site-nav-link.number{
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    color: var(--primary-text-color);
-    fill: var(--title-texst-color);
-}
-
-.site-nav-link.number:hover,
-.site-nav-link.number:focus{
-    color: var(--accent-color);
-}
-
-.logo{
-    color: var(--title-texst-color);
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px; 
-    font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.2;
-}
-
-.logo-accent{
-    color: var(--accent-color);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+    
+    &.mail{
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        color: var(--primary-texst-color);
+       
+    }
+    
+    &.mail:hover,
+    &.mail:focus{
+        color: var(--accent-color);
+    }
+    
+    &.number{
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        color: var(--primary-text-color);
+        fill: var(--title-texst-color);
+    }
+    
+    &.number:hover,
+    &.number:focus{
+        color: var(--accent-color);
+    }
 }
 
 .mail-svg{

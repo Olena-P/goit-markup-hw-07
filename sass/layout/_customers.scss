@@ -27,6 +27,12 @@
     background-color: #fff;
     color: var(--icon-color);
     border-radius: 4px;
+
+    &:hover,
+    &:focus{
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .customers-svg{
@@ -50,8 +56,3 @@
     padding-bottom: 94px;
 }
 
-.customers-list-item:hover,
-.customers-list-item:focus{
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}

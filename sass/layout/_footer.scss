@@ -1,7 +1,4 @@
-.footer.logo{
-    font-family: Raleway;
-    font-style: normal;  
-}
+
 
 html {
     line-height: 1.15;
@@ -12,28 +9,16 @@ html {
     box-sizing: border-box;
 }
 
-
-
-.footer-list-link:hover,
-.footer-list-link:focus{
-    color: var(--accent-color);
-}
-
-.footer-list-link.address:hover,
-.footer-list-link.address:focus{
-    color: var(--accent-color);
-}
-
-.site-nav-link.number:hover,
-.site-nav-link.number:focus{
-    color: var(--accent-color);
-}
-
 .footer{
     background: #2F303A;
     height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &.logo{
+        font-family: Raleway;
+        font-style: normal;  
+    }
 }
 
 .footer-list-address{
@@ -53,24 +38,23 @@ html {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+  
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+
+    &.address:hover,
+    &.address:focus{
+        color: var(--accent-color);
+    }
+
+    &.address{
+        color: var(--primary-white-color);
+    }
 }
 
-.site-nav-link.number{
-    color: #757575;
-}
 
-.logo{
-    font-family: Raleway;
-    font-style: normal;
-}
-
-.footer-list-link.address{
-    color: var(--primary-white-color);
-}
-
-.footer-logo{
-    color: var(--primary-white-color);
-}
 
 .join{
     margin-bottom: 20px;
@@ -83,17 +67,34 @@ html {
     color: #FFFFFF;
 }
 
+.site-nav-link.number:hover,
+.site-nav-link.number:focus{
+    color: var(--accent-color);
+}
+
+.site-nav-link.number{
+    color: #757575;
+}
+
 .address-icon{
     display: flex;
     align-items: baseline;
     justify-content: flex-start
 }
+
 .svg-icon{
     display: flex;
 }
 
+.svg-list-icon{
+    width: 20px;
+    height: 20px;
+    
+}
+
 .address-box{
     flex-direction: column-reverse;
+    margin-left: 80px;
 }
 
 .svg-list-link{
@@ -112,20 +113,12 @@ html {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--primary-white-color);
+
+    &:hover,
+    &:focus{
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
 }
 
-.svg-list-icon{
-    width: 20px;
-    height: 20px;
-    
-}
 
-.svg-list-item:hover,
-.svg-list-item:focus{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
-.address-box{
-    margin-left: 80px;
-}
