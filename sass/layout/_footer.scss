@@ -1,0 +1,131 @@
+.footer.logo{
+    font-family: Raleway;
+    font-style: normal;  
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+.footer-list-link:hover,
+.footer-list-link:focus{
+    color: var(--accent-color);
+}
+
+.footer-list-link.address:hover,
+.footer-list-link.address:focus{
+    color: var(--accent-color);
+}
+
+.site-nav-link.number:hover,
+.site-nav-link.number:focus{
+    color: var(--accent-color);
+}
+
+.footer{
+    background: #2F303A;
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-list-address{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.footer-address{
+    margin-top: 9px;
+}
+
+.footer-list-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.site-nav-link.number{
+    color: #757575;
+}
+
+.logo{
+    font-family: Raleway;
+    font-style: normal;
+}
+
+.footer-list-link.address{
+    color: var(--primary-white-color);
+}
+
+.footer-logo{
+    color: var(--primary-white-color);
+}
+
+.join{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.address-icon{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start
+}
+.svg-icon{
+    display: flex;
+}
+
+.address-box{
+    flex-direction: column-reverse;
+}
+
+.svg-list-link{
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+.svg-list-item{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--primary-white-color);
+}
+
+.svg-list-icon{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.svg-list-item:hover,
+.svg-list-item:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.address-box{
+    margin-left: 80px;
+}

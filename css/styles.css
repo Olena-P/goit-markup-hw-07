@@ -623,73 +623,19 @@ a {
 /*================= ENd Section 3============= */
 
 /* ============Section 4============= */
-.section-customers-title{
-    margin-bottom: 50px;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--title-texst-color);
-}
-.customers-list-link{
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-   
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-.customers-list-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-    border: 1px solid var(--icon-color);
-    fill: #AFB1B8;
-    background-color: #fff;
-    color: var(--icon-color);
-    border-radius: 4px;
-}
+/* ============Section 4============= */
 
-.customers-svg{
-    width: 40px;
-    height: 40px;
-    fill: currentColor;
-    
-}
 
-.customers-list{
-    display: flex;
-    justify-content: space-between;
-}
+/*============ FOOTER ============*/
 
-.customers-list .customers-list-link + .customers-list-link{
-    margin-left: 30px;
-}
 
-.customers{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.customers-list-item:hover,
-.customers-list-item:focus{
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
-
-.footer.logo{
-    font-family: Raleway;
-    font-style: normal;  
-}
 
 :root {
     -moz-tab-size: 4;
     tab-size: 4;
 }
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -698,14 +644,8 @@ html {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-/* ============Section 4============= */
 
 
-/*============ FOOTER ============*/
 
 .footer-list-link:hover,
 .footer-list-link:focus{
@@ -757,13 +697,17 @@ html {
     font-style: normal;
 }
 
+.footer-logo{
+    color: var(--primary-white-color);
+}
+
+
+
 .footer-list-link.address{
     color: var(--primary-white-color);
 }
 
-.footer-logo{
-    color: var(--primary-white-color);
-}
+
 
 .join{
     margin-bottom: 20px;
@@ -841,7 +785,7 @@ html {
     font-weight: bold;
     color: var(--primary-white-color);
     margin-bottom: 20px;
-  }
+}
 
 .e-mail {
     line-height: 1.25;
