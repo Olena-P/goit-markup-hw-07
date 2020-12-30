@@ -1,32 +1,8 @@
 /* ---------------icons------------------- */
-
-.feature-list-link-svg{
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-
-    width: 270px;
-    height: 120px;
-    border: none;
-    box-sizing: border-box;
-    background: #F5F4FA;
-    border-radius: 4px;
-}
-
-.feature-list-item-svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.feature-list-svg{
-    display: flex;
-    justify-content: space-between;
+.section-skills__background {
+    padding: 25px 100px;
     margin-bottom: 30px;
-    
-    &.feature-list-link-svg + .feature-list-link-svg{
-        margin-left: 30px;
-    }
+    background-color: #F5F4FA;
 }
 
 /* ---------------icons end------------------- */
