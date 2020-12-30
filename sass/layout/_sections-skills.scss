@@ -22,10 +22,12 @@
 .feature-list-svg{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 
     &.feature-list-link-svg + .feature-list-link-svg{
         margin-left: 30px;
         margin-bottom: 30px;
+
     }
 }
 
